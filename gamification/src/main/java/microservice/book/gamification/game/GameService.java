@@ -1,5 +1,6 @@
 package microservice.book.gamification.game;
 
+import lombok.Value;
 import microservice.book.gamification.challenge.ChallengeSolvedDTO;
 import microservice.book.gamification.game.domain.BadgeType;
 
@@ -14,6 +15,7 @@ public interface GameService {
     */
     GameResult newAttemptForUser(ChallengeSolvedDTO challenge);
 
+    @Value
     class GameResult {
         int score;
         List<BadgeType> badges;
