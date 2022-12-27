@@ -1,4 +1,4 @@
-package microservice.book.gamification.game.service;
+package microservice.book.gamification.game;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

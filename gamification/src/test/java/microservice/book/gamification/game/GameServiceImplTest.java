@@ -1,15 +1,11 @@
 package microservice.book.gamification.game;
 
 import microservice.book.gamification.challenge.ChallengeSolvedDTO;
-import microservice.book.gamification.game.BadgeCardRepository;
-import microservice.book.gamification.game.GameService;
 import microservice.book.gamification.game.GameService.GameResult;
-import microservice.book.gamification.game.ScoreCardRepository;
 import microservice.book.gamification.game.badgeprocessors.BadgeProcessor;
 import microservice.book.gamification.game.domain.BadgeCard;
 import microservice.book.gamification.game.domain.BadgeType;
 import microservice.book.gamification.game.domain.ScoreCard;
-import microservice.book.gamification.game.service.GameServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
