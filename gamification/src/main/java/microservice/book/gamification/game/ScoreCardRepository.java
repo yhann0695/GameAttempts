@@ -1,5 +1,6 @@
 package microservice.book.gamification.game;
 
+import microservice.book.gamification.game.domain.LeaderBoardRow;
 import microservice.book.gamification.game.domain.ScoreCard;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -22,4 +23,8 @@ public interface ScoreCardRepository extends CrudRepository<ScoreCard, Long> {
 
     List<ScoreCard> findByUserIdOrderScoreTimestampDesc(long userId);
 
+    @Query("SELECT NEW microservices.book.gamification.game.domain.LeaderBoardRow(s.userId, SUM(s.score)) " +
+            "FROM ScoreCard s " +
+            "GROUP BY s.userId ORDER BY SUM(s.score) DESC")
+    List<LeaderBoardRow> findFirst10();
 }
