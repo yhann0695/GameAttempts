@@ -3,7 +3,6 @@ package microservice.book.gamification.game;
 import microservice.book.gamification.game.domain.BadgeCard;
 import microservice.book.gamification.game.domain.BadgeType;
 import microservice.book.gamification.game.domain.LeaderBoardRow;
-import microservice.book.gamification.game.domain.ScoreCard;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
