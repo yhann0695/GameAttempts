@@ -60,7 +60,7 @@ public class GameServiceImpl implements GameService {
         int totalScore = optTotalScore.get();
 
         List<ScoreCard> scoreCardList = scoreRepository
-                .findByUserIdOrderScoreTimestampDesc(solvedChallenge.getUserId());
+                .findByUserIdOrderByScoreTimestampDesc(solvedChallenge.getUserId());
 
         Set<BadgeType> alreadyGotBadges = badgeRepository
                 .findByUserIdOrderByBadgeTimestampDesc(solvedChallenge.getUserId())

@@ -52,7 +52,7 @@ public class GameServiceImplTest {
         given(scoreCardRepository.getTotalScoreForUser(userId))
                 .willReturn(Optional.of(10));
 
-        given(scoreCardRepository.findByUserIdOrderScoreTimestampDesc(userId))
+        given(scoreCardRepository.findByUserIdOrderByScoreTimestampDesc(userId))
                 .willReturn(List.of(score));
 
         given(badgeCardRepository.findByUserIdOrderByBadgeTimestampDesc(userId))
