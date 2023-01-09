@@ -2,7 +2,7 @@ package microservices.book.multiplication.serviceclients;
 
 import lombok.extern.slf4j.Slf4j;
 import microservices.book.multiplication.challenge.ChallengeAttempt;
-import microservices.book.multiplication.challenge.ChallengeSolvedDTO;
+import microservices.book.multiplication.challenge.ChallengeSolvedEvent;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +23,7 @@ public class GamificationServiceClient {
 
     public boolean sendAttempt(final ChallengeAttempt attempt) {
         try {
-            ChallengeSolvedDTO dto = new ChallengeSolvedDTO(attempt.getId(),
+            ChallengeSolvedEvent dto = new ChallengeSolvedEvent(attempt.getId(),
                     attempt.isCorrect(),
                     attempt.getFactorA(),
                     attempt.getFactorB(),

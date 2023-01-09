@@ -1,6 +1,6 @@
 package microservice.book.gamification.game.badgeprocessors;
 
-import microservice.book.gamification.challenge.ChallengeSolvedDTO;
+import microservice.book.gamification.challenge.ChallengeSolvedEvent;
 import microservice.book.gamification.game.domain.BadgeType;
 import microservice.book.gamification.game.domain.ScoreCard;
 
@@ -22,6 +22,6 @@ public interface BadgeProcessor {
     Optional<BadgeType> processForOptionalBadge(
             int totalScore,
             List<ScoreCard> scoreCardList,
-            ChallengeSolvedDTO solvedChallenge
+            ChallengeSolvedEvent solvedChallenge
     );
 }

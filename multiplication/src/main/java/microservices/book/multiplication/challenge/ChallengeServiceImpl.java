@@ -16,7 +16,7 @@ import java.util.List;
 public class ChallengeServiceImpl implements ChallengeService {
     private final UserRepository userRepository;
     private final ChallengeAttemptRepository attemptRepository;
-    private final GamificationServiceClient gameClient;
+    private final ChallengeEventPub challengeEventPub;
 
     @Override
     public ChallengeAttempt verifyAttempt(ChallengeAttemptDTO attemptDTO) {
@@ -38,7 +38,7 @@ public class ChallengeServiceImpl implements ChallengeService {
 
         ChallengeAttempt storedAttempt = attemptRepository.save(checkedAttempt);
 
-        gameClient.sendAttempt(storedAttempt);
+        challengeEventPub.challengeSolved(storedAttempt);
 
         return storedAttempt;
     }

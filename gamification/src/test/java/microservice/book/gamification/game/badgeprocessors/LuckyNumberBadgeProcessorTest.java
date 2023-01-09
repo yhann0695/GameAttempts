@@ -1,6 +1,6 @@
 package microservice.book.gamification.game.badgeprocessors;
 
-import microservice.book.gamification.challenge.ChallengeSolvedDTO;
+import microservice.book.gamification.challenge.ChallengeSolvedEvent;
 import microservice.book.gamification.game.domain.BadgeType;
 import microservice.book.gamification.game.domain.ScoreCard;
 import org.junit.jupiter.api.BeforeEach;
@@ -25,7 +25,7 @@ public class LuckyNumberBadgeProcessorTest {
                 .processForOptionalBadge(
                         10,
                         List.of(new ScoreCard(1L, 1L)),
-                        new ChallengeSolvedDTO(1L,
+                        new ChallengeSolvedEvent(1L,
                                 true,
                                 42,
                                 10,
@@ -40,7 +40,7 @@ public class LuckyNumberBadgeProcessorTest {
     void shouldNotGiveBadgeIfNotLuckyFactor() {
         Optional<BadgeType> badgeType = luckyNumberBadgeProcessor
                 .processForOptionalBadge(10, List.of(new ScoreCard(1L, 1L)),
-                        new ChallengeSolvedDTO(1L,
+                        new ChallengeSolvedEvent(1L,
                                 true,
                                 22,
                                 10,

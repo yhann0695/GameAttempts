@@ -1,9 +1,9 @@
-package microservices.book.multiplication.challenge;
+package microservice.book.gamification.challenge;
 
 import lombok.Value;
 
 @Value
-public class ChallengeSolvedDTO {
+public class ChallengeSolvedEvent {
     long attemptId;
     boolean correct;
     int factorA;

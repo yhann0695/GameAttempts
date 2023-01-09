@@ -1,6 +1,6 @@
 package microservice.book.gamification.game;
 
-import microservice.book.gamification.challenge.ChallengeSolvedDTO;
+import microservice.book.gamification.challenge.ChallengeSolvedEvent;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,12 +28,12 @@ public class GameControllerTest {
     private MockMvc mvc;
 
     @Autowired
-    private JacksonTester<ChallengeSolvedDTO> json;
+    private JacksonTester<ChallengeSolvedEvent> json;
 
     @Test
     void postValidResultTest() throws Exception {
         long userId = 1L, attemptId = 1L;
-        var solved = new ChallengeSolvedDTO(
+        var solved = new ChallengeSolvedEvent(
                 attemptId, true, 20, 70, userId, "john_doe"
         );
 
