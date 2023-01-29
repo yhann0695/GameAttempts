@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/gamification/pom.xml" />
         <option value="$PROJECT_DIR$/multiplication/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
       </list>
     </option>
   </component>

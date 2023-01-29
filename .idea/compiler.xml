@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gamification" />
+        <module name="gateway" />
         <module name="multiplication" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gamification" target="17" />
+      <module name="gateway" target="17" />
       <module name="multiplication" target="17" />
     </bytecodeTargetLevel>
   </component>
