@@ -8,18 +8,21 @@ spring:
         - id: multiplication
           uri: http://localhost:8080/
           predicates:
-          - Path=/challenges/**,/attempts,/attempts/**,/users/**
+            - Path=/challenges/**,/attempts,/attempts/**,/users/**
         - id: gamification
           uri: http://localhost:8081/
           predicates:
             - Path=/leaders
+      logging:
+        level:
+          org.springframework.cloud.gateway.handler.predicate: trace
       globalcors:
         cors-configurations:
           '[/**]':
-          allowedOrigins: "http://localhost:3000"
-          allowedHeaders:
-            - "*"
-          allowedMethods:
-            - "GET"
-            - "POST"
-            - "OPTIONS"
+            allowedOrigins: "http://localhost:3000"
+            allowedHeaders:
+              - "*"
+            allowedMethods:
+              - "GET"
+              - "POST"
+              - "OPTIONS"
