@@ -8,6 +8,7 @@ import microservice.book.gamification.game.domain.BadgeCard;
 import microservice.book.gamification.game.domain.BadgeType;
 import microservice.book.gamification.game.domain.ScoreCard;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
 import java.util.List;
@@ -23,6 +24,7 @@ public class GameServiceImpl implements GameService {
     private final BadgeCardRepository badgeRepository;
     private final List<BadgeProcessor> badgeProcessors;
 
+    @Transactional
     @Override
     public GameResult newAttemptForUser(final ChallengeSolvedEvent challenge) {
         if (challenge.isCorrect()) {
