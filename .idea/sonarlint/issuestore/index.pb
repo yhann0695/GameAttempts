@@ -1,6 +1,4 @@
 
-’
-bmultiplication/src/main/java/microservices/book/multiplication/challenge/ChallengeServiceImpl.java,4\5\459da04a2ba3268e2b58cb37848315a1eb6e4438
 <
 gateway/mvnw,e\5\e5a3d5450becc8a5b6bd995f01338866048aaf73
 @
@@ -127,9 +125,19 @@ i
 9.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_1.xml,5\3\53a8b0d118be82bf62d943ed7752d0febf5b84c1
 ˆ
 Xgamification/src/test/java/microservice/book/gamification/game/GameEventHandlerTest.java,f\a\fac4180eb3545129f69bf949109246f22be83e2c
-ƒ
-Sgamification/src/main/java/microservice/book/gamification/game/GameServiceImpl.java,b\c\bcc74aa1cabd69f683b7fad966991408b0b5ea8e
-„
-Tgamification/src/main/java/microservice/book/gamification/game/GameEventHandler.java,6\7\6735aa6071ef93922b5ba3668ee4ed6a3d094345
 Ž
 ^gamification/src/main/java/microservice/book/gamification/configutarion/AMQPConfiguration.java,9\e\9edd5b506bc686ae192c24ee6961036fae119fc4
+?
+gateway/pom.xml,4\b\4b316bc60d1cfae51045f6fc8e58a8ae31f03ff3
+‡
+Wgamification/src/main/java/microservice/book/gamification/game/BadgeCardRepository.java,9\2\92c891aa65dc510821eefa4b32ea1d9cd6c1d319
+Š
+Zgamification/src/main/java/microservice/book/gamification/game/LeaderBoardServiceImpl.java,e\0\e050509297c6b97d5f47eee85d55e98cbb2260be
+„
+Tgamification/src/main/java/microservice/book/gamification/game/GameEventHandler.java,6\7\6735aa6071ef93922b5ba3668ee4ed6a3d094345
+ƒ
+Sgamification/src/main/java/microservice/book/gamification/game/GameServiceImpl.java,b\c\bcc74aa1cabd69f683b7fad966991408b0b5ea8e
+
+]gamification/src/main/java/microservice/book/gamification/challenge/ChallengeSolvedEvent.java,8\3\8375752a0320944fd1f06bfd34d3f47abb0bf6cc
+}
+Mmultiplication/src/main/java/microservices/book/multiplication/user/User.java,8\b\8b0e83393b374b7f3a7de7972fefd8b4e983ffcc
