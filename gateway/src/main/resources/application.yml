@@ -5,6 +5,13 @@ spring:
   application:
     name: gateway
   cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    consul:
+      enabled: true
+      discovery:
+        query-passing: true
     gateway:
       routes:
         - id: multiplication
@@ -28,3 +35,8 @@ spring:
               - "GET"
               - "POST"
               - "OPTIONS"
+      default-filters:
+        - name: Retry
+          args:
+            retries: 3
+            methods: GET, POST
