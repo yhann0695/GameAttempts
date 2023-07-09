@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$/gamification/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/logs/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/logs/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/multiplication/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/multiplication/src/main/resources" charset="UTF-8" />
   </component>
